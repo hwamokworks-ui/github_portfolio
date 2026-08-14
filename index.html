@@ -23,7 +23,6 @@
     --shadow: 0 1px 0 rgba(20,23,26,0.04);
   }
 
-
   * { box-sizing: border-box; }
 
   body {
@@ -82,7 +81,6 @@
   }
   .lede strong { color: var(--ink); font-weight: 600; }
 
-  /* tabs */
   .tabs {
     display: flex;
     gap: 28px;
@@ -115,7 +113,6 @@
     margin: 0 0 18px;
   }
 
-  /* analytics */
   .analytics {
     display: grid;
     grid-template-columns: 1.35fr 1fr;
@@ -214,7 +211,6 @@
   .ratio-legend .dot.stale { background: var(--ink-faint); }
   .ratio-legend b { font-variant-numeric: tabular-nums; color: var(--ink); }
 
-  /* filter chips */
   .chips {
     display: flex;
     flex-wrap: wrap;
@@ -427,7 +423,6 @@
     color: var(--ink-faint);
   }
 
-  /* modal */
   .modal-backdrop {
     display: none;
     position: fixed;
@@ -561,26 +556,26 @@
   <div class="tab-panel" id="tab-portfolio">
 
     <div class="chips" role="group" aria-label="기술 스택 필터">
-      <button class="chip" data-filter="all" aria-pressed="true">전체 <b>22</b></button>
-      <button class="chip" data-filter="react" aria-pressed="false">React <b>10</b></button>
-      <button class="chip" data-filter="vite" aria-pressed="false">Vite <b>10</b></button>
-      <button class="chip" data-filter="html" aria-pressed="false">HTML <b>9</b></button>
-      <button class="chip" data-filter="supabase" aria-pressed="false">Supabase <b>7</b></button>
-      <button class="chip" data-filter="javascript" aria-pressed="false">JavaScript <b>5</b></button>
+      <button class="chip" data-filter="all" aria-pressed="true">전체 <b>18</b></button>
+      <button class="chip" data-filter="react" aria-pressed="false">React <b>9</b></button>
+      <button class="chip" data-filter="vite" aria-pressed="false">Vite <b>9</b></button>
+      <button class="chip" data-filter="supabase" aria-pressed="false">Supabase <b>6</b></button>
+      <button class="chip" data-filter="html" aria-pressed="false">HTML <b>6</b></button>
       <button class="chip" data-filter="python" aria-pressed="false">Python <b>5</b></button>
-      <button class="chip" data-filter="tailwindcss" aria-pressed="false">Tailwind CSS <b>4</b></button>
+      <button class="chip" data-filter="javascript" aria-pressed="false">JavaScript <b>4</b></button>
       <button class="chip" data-filter="typescript" aria-pressed="false">TypeScript <b>4</b></button>
-      <button class="chip" data-filter="vercel" aria-pressed="false">Vercel <b>4</b></button>
-      <button class="chip" data-filter="geminiapi" aria-pressed="false">Gemini API <b>2</b></button>
+      <button class="chip" data-filter="tailwindcss" aria-pressed="false">Tailwind CSS <b>3</b></button>
+      <button class="chip" data-filter="vercel" aria-pressed="false">Vercel <b>3</b></button>
       <button class="chip" data-filter="nodejs" aria-pressed="false">Node.js <b>2</b></button>
-      <button class="chip" data-filter="notionapi" aria-pressed="false">Notion API <b>2</b></button>
-      <button class="chip" data-filter="claudeapi" aria-pressed="false">Claude API <b>1</b></button>
+      <button class="chip" data-filter="geminiapi" aria-pressed="false">Gemini API <b>2</b></button>
       <button class="chip" data-filter="googlesheetsapi" aria-pressed="false">Google Sheets API <b>1</b></button>
-      <button class="chip" data-filter="kakaomapsapi" aria-pressed="false">Kakao Maps API <b>1</b></button>
-      <button class="chip" data-filter="nextjs" aria-pressed="false">Next.js <b>1</b></button>
+      <button class="chip" data-filter="notionapi" aria-pressed="false">Notion API <b>1</b></button>
       <button class="chip" data-filter="reactrouter" aria-pressed="false">React Router <b>1</b></button>
-      <button class="chip" data-filter="streamlit" aria-pressed="false">Streamlit <b>1</b></button>
+      <button class="chip" data-filter="nextjs" aria-pressed="false">Next.js <b>1</b></button>
+      <button class="chip" data-filter="claudeapi" aria-pressed="false">Claude API <b>1</b></button>
+      <button class="chip" data-filter="kakaomapsapi" aria-pressed="false">Kakao Maps API <b>1</b></button>
       <button class="chip" data-filter="tourapi" aria-pressed="false">TourAPI <b>1</b></button>
+      <button class="chip" data-filter="streamlit" aria-pressed="false">Streamlit <b>1</b></button>
     </div>
 
     <div class="toggle-row">
@@ -592,98 +587,6 @@
     </div>
 
     <div class="grid">
-
-      <article class="card" data-repo="mungnyang-road" data-tags="nextjs typescript claudeapi kakaomapsapi tourapi python streamlit">
-        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/mungnyang-road" loading="lazy" alt="">
-        <div class="body">
-          <div class="title-row"><span class="repo-name">mungnyang-road</span><span class="pill live">LIVE</span></div>
-          <div class="tags"><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Claude API</span><span class="tag">Kakao Maps API</span><span class="tag">TourAPI</span><span class="tag">Python</span><span class="tag">Streamlit</span></div>
-          <span class="meta">pushed 2026-08-14</span>
-        </div>
-        <div class="footer"><a class="live-link" href="https://mungnyang-road.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/mungnyang-road" target="_blank" rel="noopener">Code</a></div>
-      </article>
-
-      <article class="card" data-repo="jongno-elibrary-dashboard" data-tags="python">
-        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/jongno-elibrary-dashboard" loading="lazy" alt="">
-        <div class="body">
-          <div class="title-row"><span class="repo-name">jongno-elibrary-dashboard</span><span class="pill error">BUILD FAIL</span></div>
-          <div class="tags"><span class="tag">Python</span></div>
-          <span class="meta">pushed 2026-08-13</span>
-        </div>
-        <div class="footer"><span class="disabled" title="최신 프로덕션 배포가 실패 상태입니다">Live —</span><a class="code-link" href="https://github.com/hwamokworks-ui/jongno-elibrary-dashboard" target="_blank" rel="noopener">Code</a></div>
-      </article>
-
-      <article class="card" data-repo="naver-keyword-analysis" data-tags="python html">
-        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/naver-keyword-analysis" loading="lazy" alt="">
-        <div class="body">
-          <div class="title-row"><span class="repo-name">naver-keyword-analysis</span><span class="pill live">LIVE</span></div>
-          <div class="tags"><span class="tag">Python</span><span class="tag">HTML</span></div>
-          <span class="meta">pushed 2026-08-13</span>
-        </div>
-        <div class="footer"><a class="live-link" href="https://naver-keyword-analysis.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/naver-keyword-analysis" target="_blank" rel="noopener">Code</a></div>
-      </article>
-
-      <article class="card" data-repo="member-attendance-management" data-tags="react vite javascript">
-        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/member-attendance-management" loading="lazy" alt="">
-        <div class="body">
-          <div class="title-row"><span class="repo-name">member-attendance-management</span><span class="pill live">LIVE</span></div>
-          <div class="tags"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">JavaScript</span></div>
-          <span class="meta">pushed 2026-08-07</span>
-        </div>
-        <div class="footer"><a class="live-link" href="https://member-attendance-management.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/member-attendance-management" target="_blank" rel="noopener">Code</a></div>
-      </article>
-
-      <article class="card" data-repo="dessert_cafe" data-tags="react vite tailwindcss supabase reactrouter">
-        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/dessert_cafe" loading="lazy" alt="">
-        <div class="body">
-          <div class="title-row"><span class="repo-name">dessert_cafe</span><span class="pill live">LIVE</span></div>
-          <div class="tags"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">Tailwind CSS</span><span class="tag">Supabase</span><span class="tag">React Router</span></div>
-          <span class="meta">pushed 2026-08-05</span>
-        </div>
-        <div class="footer"><a class="live-link" href="https://dessert-cafe-smoky.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/dessert_cafe" target="_blank" rel="noopener">Code</a></div>
-      </article>
-
-      <article class="card" data-repo="visitiedcafemap" data-tags="react vite tailwindcss supabase">
-        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/visitiedcafemap" loading="lazy" alt="">
-        <div class="body">
-          <div class="title-row"><span class="repo-name">visitiedcafemap</span><span class="pill live">LIVE</span></div>
-          <p class="desc">카카오맵 기반 동네 카페 방문 기록 서비스</p>
-          <div class="tags"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">Tailwind CSS</span><span class="tag">Supabase</span></div>
-          <span class="meta">pushed 2026-08-05</span>
-        </div>
-        <div class="footer"><a class="live-link" href="https://visitiedcafemap.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/visitiedcafemap" target="_blank" rel="noopener">Code</a></div>
-      </article>
-
-      <article class="card" data-repo="simple_alarm" data-tags="react vite typescript supabase">
-        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/simple_alarm" loading="lazy" alt="">
-        <div class="body">
-          <div class="title-row"><span class="repo-name">simple_alarm</span><span class="pill live">LIVE</span></div>
-          <div class="tags"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">TypeScript</span><span class="tag">Supabase</span></div>
-          <span class="meta">pushed 2026-08-05</span>
-        </div>
-        <div class="footer"><a class="live-link" href="https://simple-alarm-taupe.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/simple_alarm" target="_blank" rel="noopener">Code</a></div>
-      </article>
-
-      <article class="card" data-repo="github_portfolio" data-tags="html vercel notionapi">
-        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/github_portfolio" loading="lazy" alt="">
-        <div class="body">
-          <div class="title-row"><span class="repo-name">github_portfolio</span><span class="pill live">LIVE</span></div>
-          <p class="desc">GitHub → Notion 포트폴리오 동기화 실습: /sync-repos 명령, PRD, Vercel 배포 카드 문서</p>
-          <div class="tags"><span class="tag">HTML</span><span class="tag">Vercel</span><span class="tag">Notion API</span></div>
-          <span class="meta">pushed 2026-08-05</span>
-        </div>
-        <div class="footer"><a class="live-link" href="https://github-portfolio-two-navy.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/github_portfolio" target="_blank" rel="noopener">Code</a></div>
-      </article>
-
-      <article class="card" data-repo="english-life-quotes-web" data-tags="html javascript nodejs">
-        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/english-life-quotes-web" loading="lazy" alt="">
-        <div class="body">
-          <div class="title-row"><span class="repo-name">english-life-quotes-web</span><span class="pill live">LIVE</span></div>
-          <div class="tags"><span class="tag">HTML</span><span class="tag">JavaScript</span><span class="tag">Node.js</span></div>
-          <span class="meta">pushed 2026-08-03</span>
-        </div>
-        <div class="footer"><a class="live-link" href="https://english-life-quotes-web.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/english-life-quotes-web" target="_blank" rel="noopener">Code</a></div>
-      </article>
 
       <article class="card" data-repo="book-movie-tracker" data-tags="react vite tailwindcss googlesheetsapi notionapi vercel">
         <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/book-movie-tracker" loading="lazy" alt="">
@@ -736,6 +639,16 @@
         <div class="footer"><a class="live-link" href="https://visitiedcafemap-pwa.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/visitiedcafemap-pwa" target="_blank" rel="noopener">Code</a></div>
       </article>
 
+      <article class="card" data-repo="simple_alarm" data-tags="react vite typescript supabase">
+        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/simple_alarm" loading="lazy" alt="">
+        <div class="body">
+          <div class="title-row"><span class="repo-name">simple_alarm</span><span class="pill live">LIVE</span></div>
+          <div class="tags"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">TypeScript</span><span class="tag">Supabase</span></div>
+          <span class="meta">pushed 2026-08-05</span>
+        </div>
+        <div class="footer"><a class="live-link" href="https://simple-alarm-taupe.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/simple_alarm" target="_blank" rel="noopener">Code</a></div>
+      </article>
+
       <article class="card" data-repo="incheon-airport-congestion-dashboard" data-tags="react vite supabase">
         <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/incheon-airport-congestion-dashboard" loading="lazy" alt="">
         <div class="body">
@@ -746,64 +659,44 @@
         <div class="footer"><a class="live-link" href="https://incheon-airport-congestion-dashboar.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/incheon-airport-congestion-dashboard" target="_blank" rel="noopener">Code</a></div>
       </article>
 
-      <article class="card" data-repo="selfcare_v4" data-tags="react typescript vite geminiapi supabase">
-        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/selfcare_v4" loading="lazy" alt="">
+      <article class="card" data-repo="english-life-quotes-web" data-tags="html javascript nodejs">
+        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/english-life-quotes-web" loading="lazy" alt="">
         <div class="body">
-          <div class="title-row"><span class="repo-name">selfcare_v4</span><span class="pill live">LIVE</span></div>
-          <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Vite</span><span class="tag">Gemini API</span><span class="tag">Supabase</span></div>
-          <span class="meta">pushed 2026-07-16</span>
+          <div class="title-row"><span class="repo-name">english-life-quotes-web</span><span class="pill live">LIVE</span></div>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">JavaScript</span><span class="tag">Node.js</span></div>
+          <span class="meta">pushed 2026-08-03</span>
         </div>
-        <div class="footer"><a class="live-link" href="https://selfcare-v4.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/selfcare_v4" target="_blank" rel="noopener">Code</a></div>
+        <div class="footer"><a class="live-link" href="https://english-life-quotes-web.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/english-life-quotes-web" target="_blank" rel="noopener">Code</a></div>
       </article>
 
-      <article class="card" data-repo="healthcheck" data-tags="html javascript">
-        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/healthcheck" loading="lazy" alt="">
+      <article class="card" data-repo="dessert_cafe" data-tags="react vite tailwindcss supabase reactrouter">
+        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/dessert_cafe" loading="lazy" alt="">
         <div class="body">
-          <div class="title-row"><span class="repo-name">healthcheck</span><span class="pill live">LIVE</span></div>
-          <div class="tags"><span class="tag">HTML</span><span class="tag">JavaScript</span></div>
-          <span class="meta">pushed 2026-07-02</span>
+          <div class="title-row"><span class="repo-name">dessert_cafe</span><span class="pill live">LIVE</span></div>
+          <div class="tags"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">Tailwind CSS</span><span class="tag">Supabase</span><span class="tag">React Router</span></div>
+          <span class="meta">pushed 2026-08-05</span>
         </div>
-        <div class="footer"><a class="live-link" href="https://healthcheck-gamma.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/healthcheck" target="_blank" rel="noopener">Code</a></div>
+        <div class="footer"><a class="live-link" href="https://dessert-cafe-smoky.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/dessert_cafe" target="_blank" rel="noopener">Code</a></div>
       </article>
 
-      <article class="card" data-repo="selfdailycare" data-tags="react typescript vite geminiapi">
-        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/selfdailycare" loading="lazy" alt="">
+      <article class="card" data-repo="mungnyang-road" data-tags="nextjs typescript claudeapi kakaomapsapi tourapi python streamlit">
+        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/mungnyang-road" loading="lazy" alt="">
         <div class="body">
-          <div class="title-row"><span class="repo-name">selfdailycare</span><span class="pill live">LIVE</span></div>
-          <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Vite</span><span class="tag">Gemini API</span></div>
-          <span class="meta">pushed 2026-07-02</span>
+          <div class="title-row"><span class="repo-name">mungnyang-road</span><span class="pill live">LIVE</span></div>
+          <div class="tags"><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Claude API</span><span class="tag">Kakao Maps API</span><span class="tag">TourAPI</span><span class="tag">Python</span><span class="tag">Streamlit</span></div>
+          <span class="meta">pushed 2026-08-14</span>
         </div>
-        <div class="footer"><a class="live-link" href="https://selfdailycare.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/selfdailycare" target="_blank" rel="noopener">Code</a></div>
+        <div class="footer"><a class="live-link" href="https://mungnyang-road.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/mungnyang-road" target="_blank" rel="noopener">Code</a></div>
       </article>
 
-      <article class="card" data-repo="selfcare" data-tags="html">
-        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/selfcare" loading="lazy" alt="">
+      <article class="card" data-repo="jongno-elibrary-dashboard" data-tags="python">
+        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/jongno-elibrary-dashboard" loading="lazy" alt="">
         <div class="body">
-          <div class="title-row"><span class="repo-name">selfcare</span><span class="pill live">LIVE</span></div>
-          <div class="tags"><span class="tag">HTML</span></div>
-          <span class="meta">pushed 2026-07-01</span>
+          <div class="title-row"><span class="repo-name">jongno-elibrary-dashboard</span><span class="pill live">LIVE</span></div>
+          <div class="tags"><span class="tag">Python</span></div>
+          <span class="meta">pushed 2026-08-13</span>
         </div>
-        <div class="footer"><a class="live-link" href="https://selfcare-opal.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/selfcare" target="_blank" rel="noopener">Code</a></div>
-      </article>
-
-      <article class="card" data-repo="moana" data-tags="html">
-        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/moana" loading="lazy" alt="">
-        <div class="body">
-          <div class="title-row"><span class="repo-name">moana</span><span class="pill live">LIVE</span></div>
-          <div class="tags"><span class="tag">HTML</span></div>
-          <span class="meta">pushed 2026-07-01</span>
-        </div>
-        <div class="footer"><a class="live-link" href="https://moana-peach.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/moana" target="_blank" rel="noopener">Code</a></div>
-      </article>
-
-      <article class="card" data-repo="portfolio" data-tags="html">
-        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/portfolio" loading="lazy" alt="">
-        <div class="body">
-          <div class="title-row"><span class="repo-name">portfolio</span><span class="pill live">LIVE</span></div>
-          <div class="tags"><span class="tag">HTML</span></div>
-          <span class="meta">pushed 2026-06-30</span>
-        </div>
-        <div class="footer"><a class="live-link" href="https://portfolio-two-sand-w01002vkix.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/portfolio" target="_blank" rel="noopener">Code</a></div>
+        <div class="footer"><a class="live-link" href="https://jongno-elibrary-dashboard-hwamokworks-4351s-projects.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/jongno-elibrary-dashboard" target="_blank" rel="noopener">Code</a></div>
       </article>
 
       <article class="card" data-repo="cafe" data-tags="html">
@@ -817,6 +710,66 @@
         <div class="footer"><a class="live-link" href="https://cafe-seven-mu.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/cafe" target="_blank" rel="noopener">Code</a></div>
       </article>
 
+      <article class="card" data-repo="portfolio" data-tags="html">
+        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/portfolio" loading="lazy" alt="">
+        <div class="body">
+          <div class="title-row"><span class="repo-name">portfolio</span><span class="pill live">LIVE</span></div>
+          <div class="tags"><span class="tag">HTML</span></div>
+          <span class="meta">pushed 2026-06-30</span>
+        </div>
+        <div class="footer"><a class="live-link" href="https://portfolio-two-sand-w01002vkix.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/portfolio" target="_blank" rel="noopener">Code</a></div>
+      </article>
+
+      <article class="card" data-repo="moana" data-tags="html">
+        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/moana" loading="lazy" alt="">
+        <div class="body">
+          <div class="title-row"><span class="repo-name">moana</span><span class="pill live">LIVE</span></div>
+          <div class="tags"><span class="tag">HTML</span></div>
+          <span class="meta">pushed 2026-07-01</span>
+        </div>
+        <div class="footer"><a class="live-link" href="https://moana-peach.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/moana" target="_blank" rel="noopener">Code</a></div>
+      </article>
+
+      <article class="card" data-repo="member-attendance-management" data-tags="react vite javascript">
+        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/member-attendance-management" loading="lazy" alt="">
+        <div class="body">
+          <div class="title-row"><span class="repo-name">member-attendance-management</span><span class="pill live">LIVE</span></div>
+          <div class="tags"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">JavaScript</span></div>
+          <span class="meta">pushed 2026-08-07</span>
+        </div>
+        <div class="footer"><a class="live-link" href="https://member-attendance-management.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/member-attendance-management" target="_blank" rel="noopener">Code</a></div>
+      </article>
+
+      <article class="card" data-repo="selfcare" data-tags="react typescript vite geminiapi">
+        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/selfcare" loading="lazy" alt="">
+        <div class="body">
+          <div class="title-row"><span class="repo-name">selfcare</span><span class="pill live">LIVE</span></div>
+          <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Vite</span><span class="tag">Gemini API</span></div>
+          <span class="meta">pushed 2026-07-02</span>
+        </div>
+        <div class="footer"><a class="live-link" href="https://selfcare-3.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/selfcare" target="_blank" rel="noopener">Code</a></div>
+      </article>
+
+      <article class="card" data-repo="selfcare_v4" data-tags="react typescript vite geminiapi supabase">
+        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/selfcare_v4" loading="lazy" alt="">
+        <div class="body">
+          <div class="title-row"><span class="repo-name">selfcare_v4</span><span class="pill live">LIVE</span></div>
+          <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Vite</span><span class="tag">Gemini API</span><span class="tag">Supabase</span></div>
+          <span class="meta">pushed 2026-07-16</span>
+        </div>
+        <div class="footer"><a class="live-link" href="https://selfcare-v4.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/selfcare_v4" target="_blank" rel="noopener">Code</a></div>
+      </article>
+
+      <article class="card" data-repo="naver-keyword-analysis" data-tags="python html">
+        <img class="cover" src="https://opengraph.githubassets.com/1/hwamokworks-ui/naver-keyword-analysis" loading="lazy" alt="">
+        <div class="body">
+          <div class="title-row"><span class="repo-name">naver-keyword-analysis</span><span class="pill live">LIVE</span></div>
+          <div class="tags"><span class="tag">Python</span><span class="tag">HTML</span></div>
+          <span class="meta">pushed 2026-08-13</span>
+        </div>
+        <div class="footer"><a class="live-link" href="https://naver-keyword-analysis.vercel.app" target="_blank" rel="noopener">Live</a><a class="code-link" href="https://github.com/hwamokworks-ui/naver-keyword-analysis" target="_blank" rel="noopener">Code</a></div>
+      </article>
+
     </div>
 
     <p class="chart-note" id="empty-note" style="display:none; margin-top:24px;">이 기술 스택을 쓰는 배포된 프로젝트가 없습니다.</p>
@@ -824,31 +777,29 @@
     <div class="not-deployed">
       <h2 class="section-label">Notion에는 있지만 아직 배포되지 않음</h2>
       <ul>
-        <li><a href="https://github.com/hwamokworks-ui/vibe-hiking-reservation" target="_blank" rel="noopener">vibe-hiking-reservation</a></li>
         <li><a href="https://github.com/hwamokworks-ui/jejucafemap" target="_blank" rel="noopener">jejucafemap</a></li>
-        <li><a href="https://github.com/hwamokworks-ui/vibecoding" target="_blank" rel="noopener">vibecoding</a></li>
       </ul>
     </div>
 
   </div>
 
   <div class="tab-panel" id="tab-stats" hidden>
-    <h2 class="section-label">Notion 데이터베이스 현황 · 저장소 25개 전체 기준</h2>
+    <h2 class="section-label">Notion 데이터베이스 현황 · 저장소 22개 전체 기준</h2>
     <div class="analytics">
       <div class="chart-card">
         <p class="chart-title">기술 스택 분포<span>기술태그 속성, 언급 횟수 기준</span></p>
         <div class="bar-row"><span class="bar-label">React</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="bar-value">10</span></div>
         <div class="bar-row"><span class="bar-label">Vite</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="bar-value">10</span></div>
-        <div class="bar-row"><span class="bar-label">HTML</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="bar-value">10</span></div>
+        <div class="bar-row"><span class="bar-label">HTML</span><div class="bar-track"><div class="bar-fill" style="width:80%"></div></div><span class="bar-value">8</span></div>
         <div class="bar-row"><span class="bar-label">Supabase</span><div class="bar-track"><div class="bar-fill" style="width:70%"></div></div><span class="bar-value">7</span></div>
         <div class="bar-row"><span class="bar-label">Python</span><div class="bar-track"><div class="bar-fill" style="width:60%"></div></div><span class="bar-value">6</span></div>
-        <div class="bar-row"><span class="bar-label">JavaScript</span><div class="bar-track"><div class="bar-fill" style="width:50%"></div></div><span class="bar-value">5</span></div>
-        <div class="bar-row"><span class="bar-label">TypeScript</span><div class="bar-track"><div class="bar-fill" style="width:40%"></div></div><span class="bar-value">4</span></div>
+        <div class="bar-row"><span class="bar-label">JavaScript</span><div class="bar-track"><div class="bar-fill" style="width:40%"></div></div><span class="bar-value">4</span></div>
         <div class="bar-row"><span class="bar-label">Tailwind CSS</span><div class="bar-track"><div class="bar-fill" style="width:40%"></div></div><span class="bar-value">4</span></div>
+        <div class="bar-row"><span class="bar-label">TypeScript</span><div class="bar-track"><div class="bar-fill" style="width:40%"></div></div><span class="bar-value">4</span></div>
         <div class="bar-row"><span class="bar-label">Vercel</span><div class="bar-track"><div class="bar-fill" style="width:40%"></div></div><span class="bar-value">4</span></div>
         <div class="bar-row"><span class="bar-label">Node.js</span><div class="bar-track"><div class="bar-fill" style="width:20%"></div></div><span class="bar-value">2</span></div>
-        <div class="bar-row"><span class="bar-label">Gemini API</span><div class="bar-track"><div class="bar-fill" style="width:20%"></div></div><span class="bar-value">2</span></div>
         <div class="bar-row"><span class="bar-label">Notion API</span><div class="bar-track"><div class="bar-fill" style="width:20%"></div></div><span class="bar-value">2</span></div>
+        <div class="bar-row"><span class="bar-label">Gemini API</span><div class="bar-track"><div class="bar-fill" style="width:20%"></div></div><span class="bar-value">2</span></div>
         <p class="chart-note">그 외 각 1회: Google Sheets API, React Router, Next.js, Claude API, Kakao Maps API, TourAPI, Streamlit — 대부분 mungnyang-road 한 저장소에서 등장</p>
       </div>
       <div class="chart-card">
@@ -858,15 +809,15 @@
           <div class="ratio-seg stale" style="width:0%"></div>
         </div>
         <div class="ratio-legend">
-          <span class="item"><span class="dot active"></span>활발함 · <b>25</b></span>
+          <span class="item"><span class="dot active"></span>활발함 · <b>22</b></span>
           <span class="item"><span class="dot stale"></span>방치됨 · <b>0</b></span>
         </div>
-        <p class="chart-note">25개 저장소 모두 2026년 6월 이후 푸시 기록이 있어, 2026-08-14 기준 방치된 저장소는 없습니다.</p>
+        <p class="chart-note">22개 저장소 모두 2026년 6월 이후 푸시 기록이 있어, 2026-08-15 기준 방치된 저장소는 없습니다.</p>
       </div>
     </div>
   </div>
 
-  <footer class="colophon">Notion "GitHub 리포지토리 관리" DB × Vercel API × GitHub README 대조 · 2026-08-14 기준</footer>
+  <footer class="colophon">Notion "GitHub 리포지토리 관리" DB · GitHub README 대조 · 2026-08-15 기준</footer>
 </div>
 
 <div class="modal-backdrop" id="modal-backdrop">
@@ -892,20 +843,16 @@
 
 <script type="application/json" id="readme-data">
 {
-  "mungnyang-road": "# 멍냥로드 — 반려동물 동반 여행 가이드\n\n한국관광공사 반려동물 동반여행 데이터를 기반으로, 등록한 반려동물 프로필에 맞춰\n장소별 동반 가능 여부를 🟢가능 / 🟡조건부 가능 / 🔴불가 / ⚪확인불가 4단계로 안내하고,\n필수 준비물 체크리스트를 자동으로 만들어주는 웹앱입니다.\n\n## 실행 방법\n\n```bash\nnpm install\ncp .env.local.example .env.local   # 아래 환경변수를 채워주세요\nnpm run dev                        # http://localhost:3000\n```\n\n빌드/린트:\n\n```bash\nnpm run build\nnpm run lint\n```\n\n## 환경변수\n\n`.env.local`에 아래 값을 설정해야 합니다.\n\n| 변수명 | 설명 |\n| --- | --- |\n| `TOURAPI_SERVICE_KEY` | 공공데이터포털에서 발급받은 `KorPetTourService2` 인증키 (Encoding 키를 그대로 사용, 서버에서만 사용됨) |\n| `ANTHROPIC_API_KEY` | Claude API 키 (규정 해석 엔진, 서버에서만 사용됨) |\n| `NEXT_PUBLIC_KAKAO_MAP_KEY` | 카카오맵 JavaScript SDK 앱 키 (클라이언트에 노출됨) |\n| `ANTHROPIC_MODEL` (선택) | 사용할 Claude 모델 ID. 기본값 `claude-sonnet-5` |\n\nTourAPI 키와 Anthropic 키는 서버 API 라우트(`src/app/api/**`)에서만 읽으며 클라이언트에 절대 노출되지 않습니다.\n\n## 데이터 출처\n\n- **한국관광공사 TourAPI — `KorPetTourService2`**: 지역/키워드/위치 기반 관광정보 목록, 반려동물 동반 상세 규정(`detailPetTour2`), 법정동/분류체계 코드 조회.\n- **Anthropic Claude API**: 룰 기반 파서로 명확히 판정할 수 없는 모호한 규정 문구를 해석합니다.\n- **카카오맵 JavaScript SDK**: 지도/마커 표시.\n\n실제 규정은 현장 상황에 따라 변동될 수 있으므로, 서비스 내 모든 판정 결과에는 \"정보 기준: 한국관광공사 TourAPI, 실제 규정은 변동될 수 있음\" 고지가 함께 표시됩니다.\n\n## 판정 엔진 구조\n\n`/api/verdict`는 2단계 하이브리드로 동작합니다.\n\n1. **룰 기반 파서** — 체중 제한, 소형/중형/대형견 분류, 마릿수 제한, 실내 불가/야외 전용, 케이지·입마개·목줄 요구 등을 정규식으로 추출해 즉시 판정합니다.\n2. **LLM 해석** — 룰로 확정할 수 없는 모호한 문구만 Claude API로 해석합니다. 신뢰도가 0.6 미만이면 `UNKNOWN`으로 처리합니다.\n\n## 알려진 제한사항\n\n- 이 저장소에는 실제 TourAPI/Anthropic/카카오맵 키가 포함되어 있지 않습니다.\n- `contentTypeId` 값은 매뉴얼 응답 예시가 아니라 실제 표본 데이터를 우선했습니다.\n",
-  "member-attendance-management": "# React + Vite\n\nThis template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.\n\nCurrently, two official plugins are available:\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)\n\n## React Compiler\n\nThe React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).\n\n## Expanding the Oxlint configuration\n\nIf you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled.\n",
-  "dessert_cafe": "# 핫한 디저트 가게 \"오늘의 주문\"\n\n오늘 판매하는 메뉴를 보여주고, 회원가입한 손님이 메뉴를 담아 주문하면 손님은 \"내 주문\"에서 자기 주문 상태를, 사장은 관리 화면에서 전체 주문을 확인하는 서비스. React 기초 학습용 실습 프로젝트입니다.\n\n> 오늘 만든 디저트, 오늘 받는 즐거움\n\n## 기술 스택\n\n- Vite + React (JavaScript, `.jsx`)\n- Tailwind CSS v4 + shadcn/ui\n- Supabase (Auth + Postgres, RLS로 권한 처리)\n- react-router-dom (클라이언트 라우팅)\n\n## 시작하기\n\n```bash\nnpm install\ncp .env.local.example .env.local   # 값을 채운 뒤\nnpm run dev\n```\n\n## 라우트 / 페이지\n\n| 경로 | 파일 | 설명 |\n|---|---|---|\n| `/` | `src/pages/OrderPage.jsx` | 메뉴 목록 + 장바구니 + 주문서 |\n| `/auth` | `src/pages/AuthPage.jsx` | 로그인 / 회원가입 전환 |\n| `/my` | `src/pages/MyOrdersPage.jsx` | 로그인한 사용자의 주문 내역 |\n| `/admin` | `src/pages/AdminPage.jsx` | 사장 전체 주문 관리 — 아직 미구현 (스텁) |\n\n메뉴 데이터는 DB가 아니라 `src/data/menu.js`에 하드코딩되어 있습니다.\n\n## 권한 — Row Level Security\n\n역할은 `profiles.role` 컬럼으로 손님(기본값)/사장 둘만 존재하며, 사장 승격은 UI 경로 없이 Supabase에서 수동 SQL로만 이루어집니다.\n\n## 만들지 않는 것 (범위 제외)\n\n- 결제 기능, 소셜 로그인, 비밀번호 찾기/변경\n- 메뉴 관리 화면, 재고/품절 관리\n",
-  "visitiedcafemap": "# 우리 동네 카페 지도\n\n엑셀로 정리한 카페 목록을 업로드하면 카카오맵 위에 마커로 표시하고,\n로그인한 사용자가 방문 여부와 한 줄 소감을 남길 수 있는 서비스다.\n\n## 주요 기능\n\n- **엑셀 업로드** — `.xlsx` 파일의 `이름`/`주소`/`카테고리` 컬럼을 읽어 공용 `cafes` 목록에 반영한다.\n- **지오코딩 & 마커 표시** — 카카오맵 SDK로 주소를 좌표로 변환해 지도에 표시한다.\n- **방문 체크 + 한 줄 소감** — 로그인 사용자만 저장할 수 있고, upsert로 1인당 1카페 1건이다.\n- **방문 마커 색상 구분 / 카테고리 필터 / 방문 현황 요약**\n- **내 방문 목록** — 최신순/이름순 정렬을 지원한다.\n\n## 기술 스택\n\n- React + Vite, Tailwind CSS + shadcn/ui\n- `xlsx` (클라이언트 사이드 엑셀 파싱)\n- 카카오맵 JavaScript SDK\n- Supabase (Auth + Postgres + RLS)\n\n## 시작하기\n\n```bash\nnpm install\ncp .env.example .env\nnpm run dev\n```\n\n| 변수 | 설명 |\n|---|---|\n| `VITE_KAKAO_MAP_KEY` | 카카오 개발자 콘솔 앱 키 |\n| `VITE_SUPABASE_URL` | Supabase 프로젝트 URL |\n| `VITE_SUPABASE_ANON_KEY` | Supabase anon key |\n\n## 데이터 모델\n\n- `cafes` — 이름/주소로 유일하게 식별되는 공용 데이터.\n- `visits` — 사용자별 방문 여부·소감 (`user_id`, `cafe_id` 조합 유니크).\n",
-  "github_portfolio": "# GitHub → Notion 포트폴리오 동기화 실습\n\nGitHub MCP · Notion MCP · Resend MCP 도구 호출과 프롬프트만으로 (코드 작성 없이) GitHub 저장소를 분석해 Notion 포트폴리오 데이터베이스로 정리하고, 완료 이메일을 발송하는 실습 프로젝트다. 여기에 더해, Vercel에 실제로 배포된 저장소만 골라 보여주는 카드형 포트폴리오 페이지도 별도로 만들었다.\n\n## 구성\n\n| 파일 | 내용 |\n|---|---|\n| `CLAUDE.md` | `/sync-repos` 및 모든 동기화 작업이 따르는 공통 규칙 |\n| `prd.md` | `/sync-repos` 슬래시 명령의 PRD |\n| `prd-vercel-portfolio.md` | Vercel 배포 저장소 카드형 포트폴리오(Artifact)의 PRD |\n| `.claude/commands/sync-repos.md` | GitHub 저장소 전체를 Notion DB로 동기화하는 슬래시 명령 |\n\n## 산출물\n\n- **Notion 데이터베이스**: \"GitHub 리포지토리 관리\"\n- **Vercel 포트폴리오 카드 페이지**: GitHub 계정 저장소 중 실제 배포된 것만 골라 보여주는 독립 웹페이지\n\n## 실행 방식\n\n이 프로젝트는 별도 코드베이스가 없다. `/sync-repos` 슬래시 명령을 실행하면 Claude Code가 CLAUDE.md 규칙에 따라 GitHub·Notion·Resend MCP를 순서대로 호출해 전 과정을 자동으로 수행한다.\n",
-  "book-movie-tracker": "# React + Vite\n\nThis template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.\n\nCurrently, two official plugins are available:\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)\n\n## React Compiler\n\nThe React Compiler is not enabled on this template because of its impact on dev & build performances.\n\n## Expanding the Oxlint configuration\n\nIf you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled.\n",
-  "visitiedcafemap-pwa": "# 우리 동네 카페 지도\n\n엑셀로 정리한 카페 목록을 업로드하면 카카오맵 위에 마커로 표시하고,\n로그인한 사용자가 방문 여부와 한 줄 소감을 남길 수 있는 서비스다.\n\n## 주요 기능\n\n- **엑셀 업로드** — `.xlsx` 파일의 `이름`/`주소`/`카테고리` 컬럼을 읽어 공용 `cafes` 목록에 반영한다.\n- **지오코딩 & 마커 표시** — 카카오맵 SDK로 주소를 좌표로 변환해 지도에 표시한다.\n- **방문 체크 + 한 줄 소감** — 로그인 사용자만 저장할 수 있고, upsert로 1인당 1카페 1건이다.\n- **PWA로 설치 가능** — 홈 화면에 추가해 앱처럼 사용할 수 있다.\n\n## 기술 스택\n\n- React + Vite, Tailwind CSS + shadcn/ui\n- `xlsx` (클라이언트 사이드 엑셀 파싱)\n- 카카오맵 JavaScript SDK\n- Supabase (Auth + Postgres + RLS)\n\n## 시작하기\n\n```bash\nnpm install\ncp .env.example .env\nnpm run dev\n```\n",
-  "selfcare_v4": "<div align=\"center\">\n<img width=\"1200\" height=\"475\" alt=\"GHBanner\" src=\"https://ai.google.dev/static/site-assets/images/share-ais-513315318.png\" />\n</div>\n\n# Run and deploy your AI Studio app\n\nThis contains everything you need to run your app locally.\n\nView your app in AI Studio: https://ai.studio/apps/05a4a900-87f0-458e-859c-e6adb7446daa\n\n## Run Locally\n\n**Prerequisites:**  Node.js\n\n\n1. Install dependencies:\n   `npm install`\n2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key\n3. Run the app:\n   `npm run dev`\n",
-  "healthcheck": "# healthcheck",
-  "selfdailycare": "<div align=\"center\">\n<img width=\"1200\" height=\"475\" alt=\"GHBanner\" src=\"https://ai.google.dev/static/site-assets/images/share-ais-513315318.png\" />\n</div>\n\n# Run and deploy your AI Studio app\n\nThis contains everything you need to run your app locally.\n\nView your app in AI Studio: https://ai.studio/apps/05a4a900-87f0-458e-859c-e6adb7446daa\n\n## Run Locally\n\n**Prerequisites:**  Node.js\n\n\n1. Install dependencies:\n   `npm install`\n2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key\n3. Run the app:\n   `npm run dev`\n",
-  "selfcare": "# selfcare",
-  "moana": "# moana",
+  "book-movie-tracker": "# React + Vite\n\nThis template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.\n\nCurrently, two official plugins are available:\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)\n\n## React Compiler\n\nThe React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).\n\n## Expanding the Oxlint configuration\n\nIf you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.\n",
+  "visitiedcafemap-pwa": "# 우리 동네 카페 지도\n\n엑셀로 정리한 카페 목록을 업로드하면 카카오맵 위에 마커로 표시하고,\n로그인한 사용자가 방문 여부와 한 줄 소감을 남길 수 있는 서비스다.\n자세한 기획 배경과 요구사항은 [`PRD.md`](./PRD.md)를 참고한다.\n\n## 주요 기능\n\n- **엑셀 업로드** — `.xlsx` 파일의 `이름`/`주소`/`카테고리` 컬럼을 읽어\n  공용 `cafes` 목록에 반영한다. 같은 (이름, 주소)는 신규 추가 대신\n  카테고리/좌표만 갱신한다.\n- **지오코딩 & 마커 표시** — 카카오맵 SDK로 주소를 좌표로 변환해 지도에\n  표시하고, 실패한 주소는 별도 안내 패널(닫기 가능)에 모아 보여준다.\n- **방문 체크 + 한 줄 소감** — 마커나 카페 목록 카드를 클릭하면 같은\n  팝업이 열린다. 로그인 사용자만 저장할 수 있고, 같은 카페를 다시\n  클릭하면 이전 기록이 그대로 채워진다(upsert, 1인당 1카페 1건).\n- **방문 마커 색상 구분 / 카테고리 필터 / 방문 현황 요약** — 방문한\n  카페는 마커 색이 다르게 보이고, 카테고리별로 지도·목록을 필터링할\n  수 있으며, \"총 ○곳 중 ○곳 방문 완료\"를 지도 위에서 바로 확인한다.\n- **내 방문 목록** — 방문 체크한 카페만 모아보는 화면. 최신순/이름순\n  정렬을 지원한다.\n\n## 기술 스택\n\n- React + Vite, Tailwind CSS + shadcn/ui\n- `xlsx` (클라이언트 사이드 엑셀 파싱)\n- 카카오맵 JavaScript SDK (`libraries=services`, 주소→좌표 변환 포함)\n- Supabase (Auth + Postgres + RLS)\n\n## 시작하기\n\n### 1. 의존성 설치\n\n```bash\nnpm install\n```\n\n### 2. 환경변수 설정\n\n`.env.example`을 복사해 `.env`를 만들고 값을 채운다.\n\n```bash\ncp .env.example .env\n```\n\n| 변수 | 설명 |\n|---|---|\n| `VITE_KAKAO_MAP_KEY` | 카카오 개발자 콘솔 > 앱 키 > JavaScript 키. 콘솔에서 로컬/배포 도메인을 플랫폼으로 등록해야 지도가 뜬다. |\n| `VITE_SUPABASE_URL` | Supabase 프로젝트 URL |\n| `VITE_SUPABASE_ANON_KEY` | Supabase anon(publishable) key — service role key는 절대 넣지 않는다. |\n\n### 3. Supabase 테이블 준비\n\n`public.cafes`(공용 카페 목록)와 `public.visits`(개인 방문/소감) 테이블 및\nRLS 정책이 필요하다. 참고용 스키마는 [`supabase/schema.sql`](./supabase/schema.sql)에\n있으며, 실제 적용은 Supabase MCP(`apply_migration`) 또는 Supabase\n대시보드의 SQL Editor에서 해당 내용을 실행하면 된다.\n\n### 4. 개발 서버 실행\n\n```bash\nnpm run dev\n```\n\n## 스크립트\n\n| 명령 | 설명 |\n|---|---|\n| `npm run dev` | 개발 서버 실행 |\n| `npm run build` | 프로덕션 빌드 |\n| `npm run preview` | 빌드 결과 로컬 프리뷰 |\n| `npm run lint` | Oxlint 실행 |\n\n## 데이터 모델\n\n- `cafes` — 이름/주소로 유일하게 식별되는 공용 데이터. 누구나 조회 가능,\n  로그인 사용자만 추가/갱신 가능.\n- `visits` — 사용자별 방문 여부·소감. 본인 것만 조회/저장 가능\n  (`user_id`, `cafe_id` 조합 유니크).\n\n자세한 컬럼 정의와 RLS 정책은 `PRD.md` §6과 `supabase/schema.sql`을 참고한다.\n",
+  "dessert_cafe": "# 핫한 디저트 가게 \"오늘의 주문\"\n\n오늘 판매하는 메뉴를 보여주고, 회원가입한 손님이 메뉴를 담아 주문하면 손님은 \"내 주문\"에서 자기 주문 상태를, 사장은 관리 화면에서 전체 주문을 확인하는 서비스. React 기초 학습용 실습 프로젝트입니다.\n\n> 오늘 만든 디저트, 오늘 받는 즐거움\n\n## 기술 스택\n\n- Vite + React (JavaScript, `.jsx`)\n- Tailwind CSS v4 + shadcn/ui (style: `base-nova`, primitives: `@base-ui/react`)\n- Supabase (Auth + Postgres, RLS로 권한 처리)\n- react-router-dom (클라이언트 라우팅)\n\n## 시작하기\n\n```bash\nnpm install\ncp .env.local.example .env.local   # 값을 채운 뒤\nnpm run dev\n```\n\n`.env.local`에 필요한 값:\n\n```\nVITE_SUPABASE_URL=\nVITE_SUPABASE_ANON_KEY=\n```\n\n## 라우트 / 페이지\n\n| 경로 | 파일 | 설명 |\n|---|---|---|\n| `/` | `src/pages/OrderPage.jsx` | 메뉴 목록 + 장바구니 + 주문서. 비로그인 시 \"로그인하고 주문하기\" 클릭하면 `/auth`로 이동 |\n| `/auth` | `src/pages/AuthPage.jsx` | shadcn Tabs로 로그인 / 회원가입 전환 |\n| `/my` | `src/pages/MyOrdersPage.jsx` | 로그인한 사용자의 주문 내역 (최신순) |\n| `/admin` | `src/pages/AdminPage.jsx` | 사장 전체 주문 관리 — 아직 미구현 (스텁) |\n\n메뉴 데이터는 DB가 아니라 `src/data/menu.js`에 하드코딩되어 있습니다 (메뉴 관리 화면 없음).\n\n## 인증 / 세션 관리\n\n- `src/lib/supabase.js` — `VITE_SUPABASE_URL` / `VITE_SUPABASE_ANON_KEY`로 Supabase 클라이언트 생성\n- `src/context/AuthContext.jsx` — 앱 전체에 세션을 공급하는 `AuthProvider` + `useAuth()` 훅\n  - 마운트 시 `supabase.auth.getSession()`으로 초기 세션 로드\n  - `supabase.auth.onAuthStateChange()`로 로그인/로그아웃/토큰 갱신을 자동 반영\n- `AuthPage.jsx`에서 `signUp` / `signInWithPassword`로 회원가입·로그인, 성공 시 `/`로 이동, 실패 시 에러 메시지 표시\n- 비밀번호는 Supabase Auth 메서드로만 처리 — 직접 저장·비교하는 코드 없음, `service_role` key 미사용\n\n## 데이터 모델 — `orders` 테이블\n\n`supabase/sql/001_create_orders.sql`\n\n| 컬럼 | 타입 | 제약 |\n|---|---|---|\n| `id` | bigint | PK, identity |\n| `user_id` | uuid | NOT NULL, FK → `auth.users(id)` |\n| `pickup_time` | text | NOT NULL |\n| `items` | text | NOT NULL — 예: `크루아상 x2, 쑥라떼 x1` |\n| `total_price` | int8 | NOT NULL |\n| `status` | text | NOT NULL, 기본값 `'접수'`, `check (status in ('접수','완료'))` |\n| `created_at` | timestamptz | NOT NULL, 기본값 `now()` |\n\n## 권한 — Row Level Security\n\n역할은 `profiles.role` 컬럼으로 손님(기본값)/사장 둘만 존재하며, 사장 승격은 UI 경로 없이 Supabase에서 수동 SQL로만 이루어집니다. 화면에서 버튼·라우트를 숨기는 것이 아니라 **RLS 정책이 직접 강제**합니다.\n\n| 정책 | 파일 | 내용 |\n|---|---|---|\n| RLS 활성화 | `001_create_orders.sql` | `alter table orders enable row level security` |\n| `orders_insert_own` | `002_orders_insert_policy.sql` | `authenticated` 역할이 `auth.uid() = user_id`인 행만 INSERT 가능 (다른 사람 명의 주문 생성 불가) |\n| `orders_select_own` | `003_orders_select_policy.sql` | `authenticated` 역할이 `auth.uid() = user_id`인 행만 SELECT 가능 (내 주문만 조회) |\n\n아직 없음: 사장의 전체 조회(SELECT) 정책, UPDATE(완료 처리)·DELETE 정책 — `AdminPage.jsx` 구현과 함께 추가 예정.\n\n## 디자인\n\n- `src/index.css`에서 shadcn 테마 변수(`--primary`, `--background` 등)로 색상을 관리 — 현재 블루 톤\n- 간격은 8px 배수 체계(`gap-2`, `gap-4`, `gap-6`, `gap-8` 등)로 통일, 반응형 브레이크포인트(`sm:`, `lg:`)로 좌우 패딩 단계적 확장\n- `--radius: 0.35rem`으로 각진 모서리\n\n## 만들지 않는 것 (범위 제외)\n\n- 결제 기능, 소셜 로그인, 비밀번호 찾기/변경\n- 메뉴 관리 화면, 재고/품절 관리\n",
+  "mungnyang-road": "# 멍냥로드 — 반려동물 동반 여행 가이드\n\n한국관광공사 반려동물 동반여행 데이터를 기반으로, 등록한 반려동물 프로필에 맞춰\n장소별 동반 가능 여부를 🟢가능 / 🟡조건부 가능 / 🔴불가 / ⚪확인불가 4단계로 안내하고,\n필수 준비물 체크리스트를 자동으로 만들어주는 웹앱입니다.\n\n## 실행 방법\n\n```bash\nnpm install\ncp .env.local.example .env.local   # 아래 환경변수를 채워주세요\nnpm run dev                        # http://localhost:3000\n```\n\n빌드/린트:\n\n```bash\nnpm run build\nnpm run lint\n```\n\n## 환경변수\n\n`.env.local`에 아래 값을 설정해야 합니다.\n\n| 변수명 | 설명 |\n| --- | --- |\n| `TOURAPI_SERVICE_KEY` | 공공데이터포털에서 발급받은 `KorPetTourService2` 인증키 (Encoding 키를 그대로 사용, 서버에서만 사용됨) |\n| `ANTHROPIC_API_KEY` | Claude API 키 (규정 해석 엔진, 서버에서만 사용됨) |\n| `NEXT_PUBLIC_KAKAO_MAP_KEY` | 카카오맵 JavaScript SDK 앱 키 (클라이언트에 노출됨) |\n| `ANTHROPIC_MODEL` (선택) | 사용할 Claude 모델 ID. 기본값 `claude-sonnet-5` |\n\nTourAPI 키와 Anthropic 키는 서버 API 라우트(`src/app/api/**`)에서만 읽으며 클라이언트에 절대 노출되지 않습니다.\n\n## 데이터 출처\n\n- **한국관광공사 TourAPI — `KorPetTourService2`**: 지역/키워드/위치 기반 관광정보 목록, 반려동물 동반 상세 규정(`detailPetTour2`), 법정동/분류체계 코드 조회. 필드 정의는 공식 매뉴얼(`한국관광공사_개방데이터_활용매뉴얼(반려동물동반여행)_v4.1.docx`)의 실제 응답 예시를 기준으로 검증했습니다.\n- **Anthropic Claude API**: 룰 기반 파서로 명확히 판정할 수 없는 모호한 규정 문구를 해석합니다.\n- **카카오맵 JavaScript SDK**: 지도/마커 표시.\n\n실제 규정은 현장 상황에 따라 변동될 수 있으므로, 서비스 내 모든 판정 결과에는 \"정보 기준: 한국관광공사 TourAPI, 실제 규정은 변동될 수 있음\" 고지가 함께 표시됩니다.\n\n## 판정 엔진 구조\n\n`/api/verdict`는 2단계 하이브리드로 동작합니다.\n\n1. **룰 기반 파서** (`src/lib/verdict/ruleEngine.ts`) — 체중 제한, 소형/중형/대형견 분류, 마릿수 제한, 실내 불가/야외 전용, 케이지·입마개·목줄 요구 등을 정규식으로 추출해 즉시 판정합니다. 무료이고 응답이 빠릅니다.\n2. **LLM 해석** (`src/lib/verdict/llm.ts`) — 룰로 확정할 수 없는 모호한 문구만 Claude API로 해석합니다. 응답은 zod 스키마로 검증하고, 신뢰도(`confidence`)가 0.6 미만이면 `UNKNOWN`으로 처리합니다.\n\n장소(`contentId`) × 반려동물 프로필(종/체중/마릿수) 단위로 서버 메모리 LRU 캐시(TTL 24시간, `src/lib/verdict/cache.ts`)에 저장해 같은 조합의 반복 조회 비용을 줄입니다.\n\n목록 화면의 배지는 비용을 줄이기 위해 **룰 엔진만** 사용해 즉시 계산하고(LLM 호출 없음), 상세 페이지에서만 하이브리드 엔진 전체(룰 → LLM)를 사용합니다.\n\n## 알려진 제한사항\n\n- 이 저장소에는 실제 TourAPI/Anthropic/카카오맵 키가 포함되어 있지 않습니다. 키 없이 실행하면 외부 API 호출은 실패하지만, 각 화면은 에러 배너(\"다시 시도\" 버튼 포함)와 대안 지역 제안으로 정상적으로 폴백합니다.\n- `contentTypeId` 값은 `KorPetTourService2` 매뉴얼 응답 예시(실제 표본 데이터)를 기준으로 매핑했습니다. 매뉴얼 설명 텍스트에 표기된 값(75~85)과 실제 표본 데이터의 값(12/14/32/39 등)이 서로 달라, 실제 표본 데이터를 우선했습니다.\n",
+  "cafe": "# cafe\n카페 주문서 만들기 테스트\n",
   "portfolio": "# portfolio",
-  "cafe": "# cafe\n카페 주문서 만들기 테스트\n"
+  "moana": "# moana",
+  "member-attendance-management": "# React + Vite\n\nThis template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.\n\nCurrently, two official plugins are available:\n\n- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)\n- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)\n\n## React Compiler\n\nThe React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).\n\n## Expanding the Oxlint configuration\n\nIf you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.\n",
+  "selfcare": "<div align=\"center\">\n<img width=\"1200\" height=\"475\" alt=\"GHBanner\" src=\"https://ai.google.dev/static/site-assets/images/share-ais-513315318.png\" />\n</div>\n\n# Run and deploy your AI Studio app\n\nThis contains everything you need to run your app locally.\n\nView your app in AI Studio: https://ai.studio/apps/05a4a900-87f0-458e-859c-e6adb7446daa\n\n## Run Locally\n\n**Prerequisites:**  Node.js\n\n\n1. Install dependencies:\n   `npm install`\n2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key\n3. Run the app:\n   `npm run dev`\n",
+  "selfcare_v4": "<div align=\"center\">\n<img width=\"1200\" height=\"475\" alt=\"GHBanner\" src=\"https://ai.google.dev/static/site-assets/images/share-ais-513315318.png\" />\n</div>\n\n# Run and deploy your AI Studio app\n\nThis contains everything you need to run your app locally.\n\nView your app in AI Studio: https://ai.studio/apps/05a4a900-87f0-458e-859c-e6adb7446daa\n\n## Run Locally\n\n**Prerequisites:**  Node.js\n\n\n1. Install dependencies:\n   `npm install`\n2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key\n3. Run the app:\n   `npm run dev`\n"
 }
 </script>
 
