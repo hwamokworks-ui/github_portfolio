@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="google-site-verification" content="nrEWr6_NaDwPdvYxjokilh-GjF36wr2PrPcKYeiBGMg" />  
+<meta name="google-site-verification" content="nrEWr6_NaDwPdvYxjokilh-GjF36wr2PrPcKYeiBGMg" />
 <title>Projects</title>
 </head>
 <body>
@@ -176,7 +176,6 @@ h1{font-size:40px; line-height:1.15; margin:0 0 14px; font-weight:700; letter-sp
   <div class="tab-panel active" id="panel-portfolio">
     <div class="chip-row" id="chipRow"></div>
     <div class="controls-row">
-      <div></div>
       <label class="toggle-row">
         커버 이미지 보이기
         <span class="switch">
@@ -311,13 +310,27 @@ h1{font-size:40px; line-height:1.15; margin:0 0 14px; font-weight:700; letter-sp
 
   // ---- filter chips ----
   var chipRow = document.getElementById("chipRow");
+  var allChip = el("button","chip active", "전체 <span class=\"count\">"+DATA.cards.length+"</span>");
+  var tagChips = [];
+  function syncAllChip(){
+    allChip.classList.toggle("active", state.filters.size === 0);
+  }
+  allChip.addEventListener("click", function(){
+    state.filters.clear();
+    tagChips.forEach(function(c){ c.classList.remove("active"); });
+    syncAllChip();
+    renderCards();
+  });
+  chipRow.appendChild(allChip);
   DATA.tagOrder.forEach(function(tag){
     var chip = el("button","chip", escapeHtml(tag) + ' <span class="count">'+DATA.tagCounts[tag]+"</span>");
     chip.addEventListener("click", function(){
       if(state.filters.has(tag)){ state.filters.delete(tag); chip.classList.remove("active"); }
       else { state.filters.add(tag); chip.classList.add("active"); }
+      syncAllChip();
       renderCards();
     });
+    tagChips.push(chip);
     chipRow.appendChild(chip);
   });
 
