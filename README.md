@@ -8,7 +8,7 @@ GitHub MCP · Notion MCP · Vercel MCP · Resend MCP 도구 호출과 프롬프�
 |---|---|
 | `CLAUDE.md` | `/sync-repos` 및 모든 동기화 작업이 따르는 공통 규칙(스키마, 배치 처리, 재시도, 활동상태/포트폴리오 노출 기준, Vercel URL 매칭 등) |
 | `prd.md` | `/sync-repos` 슬래시 명령의 PRD |
-| `prd-vercel-portfolio.md` | 카드형 포트폴리오 웹페이지("Build Log", `/build-log`)의 PRD |
+| `prd-build-log.md` | 카드형 포트폴리오 웹페이지("Build Log", `/build-log`)의 PRD |
 | `.claude/commands/sync-repos.md` | GitHub 저장소 전체를 Notion DB로 동기화하는 슬래시 명령 `/sync-repos` |
 | `.claude/commands/build-log.md` | Notion·GitHub 최신 상태로 카드형 포트폴리오 웹페이지를 재생성하는 슬래시 명령 `/build-log` |
 
